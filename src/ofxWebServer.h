@@ -28,9 +28,9 @@ public:
 	 *
 	 * e.g. addHandler(handler, "*");
 	 * this would send all URL requests to the handler
-	 * 
-	 * e.g. addHandler(handler, "actions/*");
-	 * this would send any url beginning with actions/ to
+	 */ 
+	 // e.g. addHandler(handler, "actions/*");
+	 /* this would send any url beginning with actions/ to
 	 * the handler.
 	 */
 	void addHandler(ofxWSRequestHandler *handler, string pattern);

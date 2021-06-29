@@ -58,7 +58,7 @@ map<string,string> ofxWSRequestHandler::getRequestParameters() {
 	map<string,string> params;
 	if(query!="") {
 		vector<string> s = ofSplitString(query, "&");
-		for(int i = 0; i < s.size(); i++) {
+		for(int i = 0; i < (int)s.size(); i++) {
 			
 			vector<string> keyvalue = ofSplitString(s[i], "=");
 			if(keyvalue.size()>1) {

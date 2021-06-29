@@ -139,8 +139,8 @@ void ofxWebServer::addHandler(ofxWSRequestHandler *handler, string pattern) {
 }
 
 string ofxWebServer::getIPAddress() {
-	char baseHostName[255];
-	gethostname(baseHostName, 255);
+	char baseHostName[255 - 6];
+	gethostname(baseHostName, 255 - 6);
 
 	// Adjust for iPhone -- add .local to the host name
 	char hn[255];
