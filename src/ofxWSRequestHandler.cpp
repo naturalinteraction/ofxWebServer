@@ -11,7 +11,7 @@
 #include "ofxWSRequestHandler.h"
 
 void ofxWSRequestHandler::httpResponse(string data) {
-	mg_printf(conn, "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\n%s",data.c_str());
+	mg_printf(conn, "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n%s",data.c_str());
 }
 
 void ofxWSRequestHandler::httpResponse(string mimeType, string data) {
