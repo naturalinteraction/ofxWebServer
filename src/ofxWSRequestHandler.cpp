@@ -11,11 +11,11 @@
 #include "ofxWSRequestHandler.h"
 
 void ofxWSRequestHandler::httpResponse(string data) {
-	mg_printf(conn, "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n%s",data.c_str());
+	mg_printf(conn, "HTTP/1.1 200 OK\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, DELETE, HEAD, OPTIONS\r\nContent-Type: text/html\r\n\r\n%s",data.c_str());
 }
 
 void ofxWSRequestHandler::httpResponse(string mimeType, string data) {
-	mg_printf(conn, "HTTP/1.1 200 OK\r\nContent-Type: %s\r\n\r\n%s",mimeType.c_str(), data.c_str());
+	mg_printf(conn, "HTTP/1.1 200 OK\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, DELETE, HEAD, OPTIONS\r\nContent-Type: %s\r\n\r\n%s",mimeType.c_str(), data.c_str());
 }
 
 
