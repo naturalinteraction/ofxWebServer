@@ -1,3 +1,5 @@
+#ifdef __linux__
+
 /*
  * Copyright (c) 2004-2009 Sergey Lyubka
  *
@@ -247,3 +249,5 @@ void mg_show_usage_string(FILE *fp);
 #endif /* __cplusplus */
 
 #endif /* MONGOOSE_HEADER_INCLUDED */
+
+#endif

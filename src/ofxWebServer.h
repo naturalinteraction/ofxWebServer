@@ -1,3 +1,5 @@
+#ifdef __linux__
+
 #ifndef __OFXWEBSERVER__
 #define __OFXWEBSERVER__
 
@@ -42,3 +44,5 @@ private:
 	struct mg_context *ctx;
 };
 #endif // __OFXWEBSERVER__
+
+#ifdef __linux__

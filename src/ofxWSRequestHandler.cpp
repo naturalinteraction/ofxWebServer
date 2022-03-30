@@ -1,3 +1,5 @@
+#ifdef __linux__
+
 /*
  *  ofxWSRequestHandler.cpp
  *  webServerExample
@@ -80,3 +82,5 @@ map<string,string> ofxWSRequestHandler::getRequestParameters() {
 string ofxWSRequestHandler::getQuery() {
 	return query;
 }
+
+#endif

@@ -1,3 +1,5 @@
+#ifdef __linux__
+
 /*
  *  ofxWebServer.cpp
  *  webServerExample
@@ -163,3 +165,5 @@ void ofxWebServer::callback(struct mg_connection *conn,
 }
 
 */
+
+#endif
