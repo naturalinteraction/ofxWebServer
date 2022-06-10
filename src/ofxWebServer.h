@@ -45,4 +45,4 @@ private:
 };
 #endif // __OFXWEBSERVER__
 
-#ifdef __linux__
+#endif // __linux__
